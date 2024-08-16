@@ -11,10 +11,9 @@ The decision tree shows that passengers in higher classes (1 and 2) are more lik
 
 
 - ANALYSIS 2: Survival Based on Age
-Clustering techniques are applied to group passengers based on their age, identifying distinct clusters and analyzing survival predictions across these age groups. This includes examining the impact of age on survival and how different age clusters behave. Age: Applying clustering techniques to understand age distributions and their impact on survival.
-We performed age clustering using the K-means algorithm after removing rows with missing age data. Age was standardized, and K-means clustering with three clusters was applied. The scatter plot of standardized ages shows clusters of different age groups, with cluster 1 representing younger passengers, cluster 2 middle-aged passengers, and cluster 3 older passengers. A box plot further detailed age distribution within each cluster, highlighting significant outliers in the first cluster.
-A second clustering considering both age and fare was done, revealing that clusters were primarily differentiated by fare, with clusters showing a range of fares and ages. The silhouette score, which measures clustering quality, was 0.46, indicating a good clustering fit.
-Clustering by age revealed three distinct groups with different age distributions. Clustering based on age and fare showed clusters differentiated mainly by fare. Silhouette score: 0.46.
+This includes examining the impact of age on survival and how different age clusters behave.
+I performed age clustering using the K-means algorithm after removing rows with missing age data. Age was standardized, and K-means clustering with three clusters was applied. The scatter plot of standardized ages shows clusters of different age groups, with cluster 1 representing younger passengers, cluster 2 middle-aged passengers, and cluster 3 older passengers. A box plot further detailed age distribution within each cluster, highlighting significant outliers in the first cluster.
+A second clustering considering both age & fare was done, revealing that clusters were primarily differentiated by fare, with clusters showing a range of fares and ages. The silhouette score, which measures clustering quality, was 0.46, indicating a good clustering fit.
 
 <img width="481" alt="Screenshot 2024-08-16 alle 13 05 20" src="https://github.com/user-attachments/assets/a38675df-f34e-424f-9131-505104d685cb">
 <img width="529" alt="Screenshot 2024-08-16 alle 13 06 16" src="https://github.com/user-attachments/assets/8513ddde-8c4d-4dc4-9187-2c7d28940d64">
