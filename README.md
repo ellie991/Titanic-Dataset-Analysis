@@ -124,4 +124,28 @@ For survival prediction based on sex, we used the Random Forest model. After pre
 
 This analysis highlights the impact of passenger class, age, and sex on survival chances on the Titanic.
 
----
+
+
+
+
+
+
+
+
+GRAPHS
+HYPOTHESIS 1
+
+<img width="572" alt="Screenshot 2024-08-16 alle 13 00 18" src="https://github.com/user-attachments/assets/61a28525-7577-43c8-b976-83d6c6d27f90">
+<img width="569" alt="Screenshot 2024-08-16 alle 13 00 38" src="https://github.com/user-attachments/assets/24b3b378-d64b-411f-977e-8e4388debf6e">
+
+HYPOTHESIS 2
+
+<img width="481" alt="Screenshot 2024-08-16 alle 13 05 20" src="https://github.com/user-attachments/assets/a38675df-f34e-424f-9131-505104d685cb">
+<img width="529" alt="Screenshot 2024-08-16 alle 13 06 16" src="https://github.com/user-attachments/assets/8513ddde-8c4d-4dc4-9187-2c7d28940d64">
+
+
+HYPOTHESIS 3
+
+<img width="551" alt="Screenshot 2024-08-16 alle 13 07 14" src="https://github.com/user-attachments/assets/330e19ba-3d46-416e-8ece-d38df20fa435">
+<img width="525" alt="Screenshot 2024-08-16 alle 13 06 46" src="https://github.com/user-attachments/assets/cdf55257-4e22-4bdd-bd7b-e78fdfeeeee5">
+
