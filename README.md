@@ -73,3 +73,55 @@ Ho creato il grafico a dispersione che mostra la sopravvivenza in base al sesso 
 In questo caso, il grafico mostra che per la categoria female la percentuale di sopravvivenza è del 0.79, significa che il 79% delle donne nel dataset di addestramento è sopravvissuto contro lo 0.2 del genere male (il 20% è sopravvissuto).
 Infine ho calcolato le predizioni sulla sopravvivenza sempre con il modello random forest sul dataset di addestramento stesso, calcolandone poi l’accuratezza con la funzione sum() confrontando le predizioni con le etichette di sopravvivenza effettive nel dataset di addestramento.
 Infine ho stampato l’accuratezza del dataset di addestramento, pari a 0.780112044817927, 78%.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The analysis is based on the Titanic dataset, which has been loaded from GitHub. The dataset includes passenger information such as passenger ID, survival status, class of travel, name, sex, age, ticket number, fare, cabin, and embarkation port.
+
+In this analysis, I explore three hypotheses regarding survival chances based on different passenger features. Specifically, the project investigates survival probabilities based on:
+
+Passenger Class: Using decision trees to visualize survival likelihood across different classes.
+Age: Applying clustering techniques to understand age distributions and their impact on survival.
+Sex: Analyzing survival predictions based on gender using Random Forests.
+The analysis involves data visualization, model building, and evaluation to uncover insights into the factors influencing survival on the Titanic.
+
+This project analyzes the Titanic passenger dataset, which includes variables such as Passenger ID, survival (0=no, 1=yes), passenger class (1, 2, 3), name, sex, age, ticket, fare, cabin, and embarkation. We formulated three hypotheses regarding survival based on class, age, and sex, organizing observations into clusters. 
+
+## Hypothesis 1: Survival Based on Class (1, 2, 3)
+
+After importing the training and test datasets, we created a bar plot to visually represent the distribution of passengers across the three classes. It was observed that the third class has the highest number of passengers, followed by the first and second classes.
+
+We built a decision tree model using the `rpart()` function, predicting survival based on the `Pclass` variable. The decision tree, visualized with `plot()` and `rpart.plot()`, shows that passengers in higher classes (1 and 2) are more likely to survive compared to those in the lower class (3). The tree indicates that class is a significant factor in predicting survival, with higher-class passengers having greater survival probabilities, possibly due to having access to lifeboats. The model’s accuracy on the training set was 68%.
+
+## Hypothesis 2: Survival Based on Age
+
+We performed age clustering using the K-means algorithm after removing rows with missing age data. Age was standardized, and K-means clustering with three clusters was applied. The scatter plot of standardized ages shows clusters of different age groups, with cluster 1 representing younger passengers, cluster 2 middle-aged passengers, and cluster 3 older passengers. A box plot further detailed age distribution within each cluster, highlighting significant outliers in the first cluster.
+
+A second clustering considering both age and fare was done, revealing that clusters were primarily differentiated by fare, with clusters showing a range of fares and ages. The silhouette score, which measures clustering quality, was 0.46, indicating a good clustering fit.
+
+## Hypothesis 3: Survival Based on Sex
+
+We clustered passengers based on sex and age. Sex was coded numerically (male=0, female=1) and K-means clustering with three clusters was applied. The scatter plot showed that older passengers were predominantly male, as indicated by a noticeable outlier age of 80 years.
+
+For survival prediction based on sex, we used the Random Forest model. After preparing the dataset, the model predicted survival based on sex, showing a 79% survival rate for females and 20% for males. The accuracy of this model on the training set was 78%.
+
+## Summary
+
+- **Class-Based Survival**: Higher-class passengers have a higher survival probability. Accuracy of the decision tree model: 68%.
+- **Age-Based Clustering**: Clustering by age revealed three distinct groups with different age distributions. Clustering based on age and fare showed clusters differentiated mainly by fare. Silhouette score: 0.46.
+- **Sex-Based Survival**: Female passengers had a higher survival rate compared to males. Random Forest model accuracy: 78%.
+
+This analysis highlights the impact of passenger class, age, and sex on survival chances on the Titanic.
+
+---
