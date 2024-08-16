@@ -98,19 +98,19 @@ The analysis involves data visualization, model building, and evaluation to unco
 
 This project analyzes the Titanic passenger dataset, which includes variables such as Passenger ID, survival (0=no, 1=yes), passenger class (1, 2, 3), name, sex, age, ticket, fare, cabin, and embarkation. We formulated three hypotheses regarding survival based on class, age, and sex, organizing observations into clusters. 
 
-## Hypothesis 1: Survival Based on Class (1, 2, 3)
+## ANALYSIS 1: Survival Based on Class (1, 2, 3)
 
 After importing the training and test datasets, we created a bar plot to visually represent the distribution of passengers across the three classes. It was observed that the third class has the highest number of passengers, followed by the first and second classes.
 
 We built a decision tree model using the `rpart()` function, predicting survival based on the `Pclass` variable. The decision tree, visualized with `plot()` and `rpart.plot()`, shows that passengers in higher classes (1 and 2) are more likely to survive compared to those in the lower class (3). The tree indicates that class is a significant factor in predicting survival, with higher-class passengers having greater survival probabilities, possibly due to having access to lifeboats. The model’s accuracy on the training set was 68%.
 
-## Hypothesis 2: Survival Based on Age
+## ANALYSIS 2: Survival Based on Age
 
 We performed age clustering using the K-means algorithm after removing rows with missing age data. Age was standardized, and K-means clustering with three clusters was applied. The scatter plot of standardized ages shows clusters of different age groups, with cluster 1 representing younger passengers, cluster 2 middle-aged passengers, and cluster 3 older passengers. A box plot further detailed age distribution within each cluster, highlighting significant outliers in the first cluster.
 
 A second clustering considering both age and fare was done, revealing that clusters were primarily differentiated by fare, with clusters showing a range of fares and ages. The silhouette score, which measures clustering quality, was 0.46, indicating a good clustering fit.
 
-## Hypothesis 3: Survival Based on Sex
+## ANALYSIS 3: Survival Based on Sex
 
 We clustered passengers based on sex and age. Sex was coded numerically (male=0, female=1) and K-means clustering with three clusters was applied. The scatter plot showed that older passengers were predominantly male, as indicated by a noticeable outlier age of 80 years.
 
@@ -133,18 +133,18 @@ This analysis highlights the impact of passenger class, age, and sex on survival
 
 
 GRAPHS
-HYPOTHESIS 1
+ANALYSIS 1: Survival Based on Class (1, 2, 3)
 
 <img width="572" alt="Screenshot 2024-08-16 alle 13 00 18" src="https://github.com/user-attachments/assets/61a28525-7577-43c8-b976-83d6c6d27f90">
 <img width="569" alt="Screenshot 2024-08-16 alle 13 00 38" src="https://github.com/user-attachments/assets/24b3b378-d64b-411f-977e-8e4388debf6e">
 
-HYPOTHESIS 2
+ANALYSIS 2: Survival Based on Age
 
 <img width="481" alt="Screenshot 2024-08-16 alle 13 05 20" src="https://github.com/user-attachments/assets/a38675df-f34e-424f-9131-505104d685cb">
 <img width="529" alt="Screenshot 2024-08-16 alle 13 06 16" src="https://github.com/user-attachments/assets/8513ddde-8c4d-4dc4-9187-2c7d28940d64">
 
 
-HYPOTHESIS 3
+ANALYSIS 3: Survival Based on Sex
 
 <img width="551" alt="Screenshot 2024-08-16 alle 13 07 14" src="https://github.com/user-attachments/assets/330e19ba-3d46-416e-8ece-d38df20fa435">
 <img width="525" alt="Screenshot 2024-08-16 alle 13 06 46" src="https://github.com/user-attachments/assets/cdf55257-4e22-4bdd-bd7b-e78fdfeeeee5">
