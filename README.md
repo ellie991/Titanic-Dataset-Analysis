@@ -21,10 +21,8 @@ Clustering by age revealed three distinct groups with different age distribution
 
 
 - ANALYSIS 3: Survival Based on Sex
-This analysis explores the relationship between sex and survival using clustering and random forests. It aims to understand how gender influences survival probabilities and to develop predictive models based on sex. Sex: Analyzing survival predictions based on gender using Random Forests.
-We clustered passengers based on sex and age. Sex was coded numerically (male=0, female=1) and K-means clustering with three clusters was applied. The scatter plot showed that older passengers were predominantly male, as indicated by a noticeable outlier age of 80 years.
-For survival prediction based on sex, we used the Random Forest model. After preparing the dataset, the model predicted survival based on sex, showing a 79% survival rate for females and 20% for males. The accuracy of this model on the training set was 78%.
-Female passengers had a higher survival rate compared to males. Random Forest model accuracy: 78%.
+This analysis explores the relationship between sex and survival using clustering and random forests. It aims to understand how gender influences survival probabilities and to develop predictive models based on sex. Sex was coded numerically (male=0, female=1) and K-means clustering with three clusters was applied. The scatter plot showed that older passengers were predominantly male, as indicated by a noticeable outlier age of 80 years.
+The model predicted survival based on sex showing a 79% survival rate for females and 20% for males, showing that female passengers had a higher survival rate compared to males. Random Forest model accuracy: 78%.
 
 <img width="551" alt="Screenshot 2024-08-16 alle 13 07 14" src="https://github.com/user-attachments/assets/330e19ba-3d46-416e-8ece-d38df20fa435">
 <img width="525" alt="Screenshot 2024-08-16 alle 13 06 46" src="https://github.com/user-attachments/assets/cdf55257-4e22-4bdd-bd7b-e78fdfeeeee5">
